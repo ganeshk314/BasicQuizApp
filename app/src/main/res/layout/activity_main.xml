@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/design_default_color_primary"
+    android:padding="20sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total questions "
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/total_question"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answered"
+        android:id="@+id/answeredquestions"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_below="@+id/total_question"
+        android:layout_marginTop="15sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choices_layout"
+        android:layout_marginBottom="15dp"
+        android:text="This will be the question"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/choices_layout">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ansA"
+            android:text="ANS A"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ansB"
+            android:text="ANS B"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ansC"
+            android:text="ANS C"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:id="@+id/ansD"
+            android:text="ANS D"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submitbtn"
+            android:layout_below="@id/choices_layout"
+            android:layout_marginTop="15sp"
+            android:padding="3sp"/>
+
+</RelativeLayout>
